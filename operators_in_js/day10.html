@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+
+    <title>Unary oper</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div data-aos="flip-left"></div>
+    <h1>Unary oper</h1>
+    <h2 id="view"></h2>
+
+
+    <!-- -------------javascript code-------------- -->
+    <script>
+        let x=5;
+        let y=6;
+        console.log("x=",x,"&","y=",y);
+
+        
+        
+          document.getElementById('view').innerHTML =x+" "+typeof(x);
+
+          
+        console.log("x--=",x--);
+        console.log(x);
+        console.log("--x=",--x);
+        console.log(x);
+    </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+    
+</body>
+</html>

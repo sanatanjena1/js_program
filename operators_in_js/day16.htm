@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Add</title>
+    <style>
+        table, fieldset{
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Add two Number -->
+   <table>
+        <fieldset>
+            <legend>Add Two Number</legend>
+            <input type="text" name="" id="fnum" placeholder="Enter First Number"><br><br>
+            <input type="text" name="" id="snum" placeholder="Enter second Number"><br><br>
+            <button id="res" onclick="tot()">Calculate</button>
+
+            <h1 id="to"></h1>
+        </fieldset>
+    </table>
+    
+<!-- ---------js code--------------- -->
+    <script>
+
+        function tot(){
+            var x=document.getElementById('fnum').value;
+            var y=document.getElementById('snum').value;
+            
+
+
+            const sum=parseInt(x)+parseInt(y);
+
+            // console.log(sum);
+           document.getElementById('to').innerHTML =" sum of "+(x+" + "+y)+" = "+sum;
+
+        }
+
+    </script>
+    
+</body>
+</html>
